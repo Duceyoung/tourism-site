@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Membership - Online Zoo</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--Header Section -->
+        <header>
+            <div class="container">
+                <h1>The City Zoo</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="animals.html">Animals</a></li>
+                        <li><a href="visit_us.html">Visit Us</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="book.html">Book tickets</a></li>
+                        <li><a href="contact_us.html" class="active">Contact Us</a></li>
+        </header>
+        <!--Membership section-->
+        <main>
+            <section class="membership-info">
+                <h2>Choose Your Membership Plan</h2>
+                <form id="membershipForm">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="membershipType">Membership Type:</label>
+                    <select id="membershipType" name="membershipType" required>
+                        <option value="basic">Basic - $5/month</option>
+                        <option value="premium">Premium - $10/month</option>
+                        <option value="family">Family - $15/month</option>
+                    </select>
+
+                    <label for="paymentMethod">Payment Method</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="creditCard">Credit Card</option>
+                        <option value="paypal">Paypal</option>
+                    </select>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+
+                <div id="membershipResponse" class="hidden"></div>
+            </section>
+        </main>
+
+         <!-- Footer Section -->
+     <footer>
+        <div class="container">
+            <p>&copy; 2024 The City Zoo. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Dashboard - Zoo Ticketing</title>
+        <link rel="stylesheet" href="admin-styles.css">
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <h1>Admin Dashboard</h1>
+            <nav>
+               <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#bookings">Bookings</a></li>
+                <li><a href="#pricing">Ticket Pricing</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="logout.html">Logout</a></li>
+               </ul>
+            </nav>
+        </header>
+
+        <!-- Overview Section -->
+        <section id="overview">
+            <h2>Dashboard Overview</h2>
+            <div class="overview-stats">
+                <p>Total Tickets Sold: <span>1234</span></p>
+                <p>Total Revenue: <span>$25,000</span></p>
+                <p>Daily Visitors: <span>150</span></p>
+            </div>
+        </section>
+
+        <!-- Booking Management Section -->
+        <section id="bookings">
+            <h2>Manage Bookings</h2>
+            <table>
+                <tr>
+                    <th>Visitor Name</th>
+                    <th>Email</th>
+                    <th>Visit Date</th>
+                    <th>Ticket Type</th>
+                    <th>Number of Tickets</th>
+                    <th>Actions</th>
+                </tr>
+                <!-- Sample booking rows -->
+                <tr>
+                  <td>John Lean</td>
+                  <td>john@gmail.com</td>
+                  <td>2024-11-15</td>
+                  <td>Adult</td>
+                  <td>3</td>
+                  <td>
+                    <button>Edit</button>
+                    <button>Cancel</button>
+                  </td>
+                </tr>
+                 <!-- Additional rows would be dynamically generated here -->
+            </table>
+        </section>
+
+        <!-- Ticket Pricing Management Section -->
+        <section id="pricing">
+            <h2>Manage Ticket Pricing</h2>
+            <form>
+                <label>Adult Ticket Price: $<input type="number" name="adult-price" value="20" required></label><br>
+                <label>Child Ticket Price: $<input type="number" name="child-price" value="10" required></label><br>
+                <label>Senior Ticket Price: $<input type="number" name="senior-price" value="15" required></label><br>
+                <button type="submit">Update Prices</button>
+            </form>
+        </section>
+    </body>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 The City Zoo. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+      </footer>
+</html>
